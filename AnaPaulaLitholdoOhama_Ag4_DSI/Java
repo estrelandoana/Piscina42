@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Programa SPCar {
+	public static void main (String args[]){
+	//Declaração das variáveis
+	string Modelo;
+	int Valor;
+	int Dias;
+	int KM;
+	int Total;
+	Scanner leitor = new Scanner(System.in);
+		// início do programa
+		System.out.println("Programa SPCar");
+			System.out.println("Bem-vindo ao SP Car, insira o modelo do carro:");
+		//leitura do Modelo
+		Modelo = leitor.next();
+			System.out.println("Insira o valor da diária:");
+		//leitura do Valor
+		Valor = leitor.nextInt();
+			System.out.println("Insira a quantidade de dias:");
+		//leitura de Dias
+		Dias = leitor.nextInt();
+			System.out.println("Insira a quantidade de KM:");
+		//leitura de KM
+		KM = leitor.nextInt();
+			//Processamento
+			Total=Valor(Dias*KM);
+
+			//saída
+			System.out.println("O valor a ser pago pelo Modelo, será:" + Total);
+		}
+	}
+	}
